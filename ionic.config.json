@@ -1,0 +1,8 @@
+{
+  "name": "Onikuma Monitering",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite",
+  "id": "24e1667b"
+}
