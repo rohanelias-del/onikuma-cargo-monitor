@@ -1,0 +1,13 @@
+.fluid-hover-card {
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.fluid-hover-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: #d4af37 !important; /* Gold card highlight on active hover focus */
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15) !important;
+}
+
+ion-content {
+  --background: none !important;
+}
