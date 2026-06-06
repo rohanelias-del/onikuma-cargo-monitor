@@ -69,7 +69,7 @@ const ViewMessage: React.FC = () => {
 
   useEffect(() => {
     if (!container) return;
-    let socket = new WebSocket('ws://localhost:8080');
+    let socket = new WebSocket('wss://onikuma-telemetry-backend.onrender.com');
     socket.onopen = () => setWsStatus('TELEMETRY ONLINE');
     socket.onclose = () => setWsStatus('LINK DISCONNECTED');
     socket.onmessage = (event) => {
@@ -310,3 +310,4 @@ const ViewMessage: React.FC = () => {
 };
 
 export default ViewMessage;
+"Update WebSocket to live Render cloud server"
